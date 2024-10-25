@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Main Icon that is clickable -->
+
+    <!-- Hidden icon selection layout, initially set to GONE -->
+
+    <ImageView
+        android:id="@+id/mainIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:contentDescription="Main Icon"
+        android:src="@drawable/question_mark_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/iconSelectionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:columnCount="3"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/mainIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 1"
+            android:src="@drawable/bread_48" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 2"
+            android:src="@drawable/butter_48" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 3"
+            android:src="@drawable/cake_48" />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 4"
+            android:src="@drawable/cheese_48" />
+
+        <ImageView
+            android:id="@+id/icon5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 5"
+            android:src="@drawable/fish_48" />
+
+        <ImageView
+            android:id="@+id/icon6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 6"
+            android:src="@drawable/fruits_48" />
+
+        <ImageView
+            android:id="@+id/icon7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 7"
+            android:src="@drawable/meat_48" />
+
+        <ImageView
+            android:id="@+id/icon8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 8"
+            android:src="@drawable/pasta_48" />
+
+        <ImageView
+            android:id="@+id/icon9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="Icon 9"
+            android:src="@drawable/vegetables_48" />
+
+    </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
